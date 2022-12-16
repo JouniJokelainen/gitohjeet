@@ -129,7 +129,7 @@ Varmista että olet oikeassa kansiossa *git status* kertoo jos kaikki on kunnoss
 
 Git toimii tallentamalla ja varmistamalla muutokset ennen kuin ne päivitetään kirjastoon.
 
-![Git workflow](https://github.com/JouniJokelainen/gitohjeet/ohjeet/Elia.Sippola/workflow.png)
+![Git workflow](https://github.com/JouniJokelainen/gitohjeet/blob/main/ohjeet/Elia.Sippola/workflow.png)
 
 Jos kirjaston **main** haaraan on tullut muutoksia käytä komentoa *git fetch*. Ennen kuin aloitat tiedostojen muokkaamisen, kannattaa tarkistaa ettei päähaarassa ole muutoksia.
 
