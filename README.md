@@ -1,3 +1,3 @@
 #### SIJOITA TEKEMÄSI *README.MD* TIEDOSTO OHJEET HAKEIMSTOON SITEN ETTÄ LUOT SINNE HAKEMISTON *ETUNIMI.SUKUNIMI* JA SIJOITAT OMAN *README.MD* TIEDOSTOSI SINNE  
 
-<img src="assignement.jpg" width="480" height="320">
+<img src="ohjeet.jpg" width="240" height="160">
