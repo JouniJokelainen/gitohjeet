@@ -1,0 +1,25 @@
+git add- lisätään muutoksia 
+  
+  git init- Git versiohallinnan ottaminen käyttöön.
+  
+   git add b.txt tai git add -Tiedon lisääminen Git indeksiin
+  
+  git commit -varmuuskopiot
+  
+   git log Git commitin listaaminen
+  
+  git status- antaa tietoa projektin ja sen sisältämien muutosten tämänhetkisestä tilasta
+  
+  git push- paikallisen kansion tietojen lisääminen githubiin
+  
+  git branch- uusien git haarojen (branch) lisääminen
+  
+  git revert- Revert some existing commits
+  
+  git reset- undo local changes to the state of a Git repo
+  
+  git fetch- repositorion ja paikallisen kansion tilenteen erojen päivittäminen
+  
+  git remote- A remote repository in Git
+  
+  fork, select the repository and in the top right corner of the page, click Fork
