@@ -28,14 +28,14 @@ Git:ä voidaan käyttää jokoa Git komentoriviltä tai suoraan kehitystyökalun
 
 Git järjestelmänä koostuu kolmesta osasta
 
-1. Työkansio tietoineen (working directory)
-2. Git indeksi (staging area)
+1. Työkansio tietoineen (*working directory*)
+2. Git indeksi (*staging area*)
 3. Paikallinen versionhallinta repositorio .git hakemistossa (local .git)
 Git prosessi
 
 ![prosessia](2.png)
 
-**Git työskentely:**
+#### Git työskentely:
 
 Git tietojen määrittäminen:
 
@@ -44,46 +44,63 @@ Git tietojen määrittäminen:
 * Sähköpostiosoitteen määrittäminen: `git config --global user.email "erkki.esimerkki@example.com"`
 * Git tietojen näyttäminen: `git config --list --global`
 
-Git työskentelyn peruskomentoja:
+### Git työskentelyn peruskomentoja
 
-* Tiedon tuottaminen ja muokkaaminen Git työkansiossa
-* Tiedon lisääminen Git indeksiin: `git add b.txt` tai `git add .`
-* Commit:n luominen indeksissä olevista tiedoista: `git commit -m "Commit viesti"`
-* Git commit:n listaaminen: `git log tai git log --oneline`
-* Git tilan tarkastminen: `git status`
+#### Tiedon tuottaminen ja muokkaaminen Git työkansiossa
+#### Tiedon lisääminen Git indeksiin
+    git add b.txt
+#### tai
+    git add
+#### Commit:n luominen indeksissä olevista tiedoista
+    git commit -m "Commit viesti"
+#### Git commit:n listaaminen
+    git log tai git log --oneline
+#### Git tilan tarkastminen 
+    git status
 
-**Github <-> Git työskentely:**
+### Github <-> Git työskentely
 
-Työhakemiston synkronoiminen GitHub:n:
+#### Työhakemiston synkronoiminen GitHubiin
 
-* Paikallisen työkansion kytkeminen GitHub repositorioon:
-`git remote add origin https://github.com/GitHubTunnus/GitHubRepositorio.git`
-* Etärepositorio kytköksen tarkistaminen: `git remote -v`
-* Paikallisen työkansion tietojen puskeminen GitHub:n: `git push -u origin master`
+#### Paikallisen työkansion kytkeminen GitHub repositorioon
+    git remote add origin https://github.com/GitHubTunnus/GitHubRepositorio.git
+#### Etärepositorio kytköksen tarkistaminen:
+    git remote -v
+#### Paikallisen työkansion tietojen puskeminen GitHubiin
+    git push -u origin master
 
-GitHub:a olevien tietojen synkronoiminen paikalliseen työkansioon:
+### GitHubissa olevien tietojen synkronoiminen paikalliseen työkansioon
 
-* GitHub repositorion ja paikallisen työkansion tilenteen erojen päivittäminen: `git fetch`
-* Tietojen lataaminen GitHub repositoriosta paikalliseen työkansioon: `git pull`
+#### GitHub repositorion ja paikallisen työkansion tilenteen erojen päivittäminen
+    git fetch
+#### Tietojen lataaminen GitHub repositoriosta paikalliseen työkansioon
+    git pull
 
 GitHub fork:* Ns. Fork on GitHub repositorio joka syntynyt fork toiminnon takia kopiona jonkun toisen GitHub repositorista. Fork sisältää kaikki samat tiedot kuin alkuperäinen repositorio. Fork:n omistaa kopion luonut henkilö joten tietojen lisääminen Fork repositorioon on mahdollista.
 
-Git fork:n liittyviä Git komentoja
+### Git fork:n liittyviä Git komentoja
 
-* Upstream remoten lisääminen paikalliseen Git työhakemistoon:
-`git remote add upstream <git://github.com/GitHubTunnus>/GitHubRepositorio.git>`
-* Upstream remoten tietojen synkronoiminen Giot työhakemistoon: `git fetch upstream`
+#### Upstream remoten lisääminen paikalliseen Git työhakemistoon
+    git remote add upstream <git://github.com/GitHubTunnus>/GitHubRepositorio.git>
+#### Upstream remoten tietojen synkronoiminen Giot työhakemistoon
+    git fetch upstream
 
-**Haarat eli branch:t:**
+### Haarat eli branch:t:
 
 Git haara (branch) on toiminallisuus joka mahdollistaa haarassa olevien tietojen muuttamisen ilman että muutoksilla on vaikutusta työkansion muihin tietoihin. Haaraa voitaisiin käyttää sovelluksen erilaisten toiminnallisuuksien kehittämiseen ilman että kehitystyöllä on vaikutusta sovelluksen muun lähdekoodin toimintaan. Haarassa olevat tiedot yhdistetään lopulta sovelluksen päähaaran (master tai main) sisältämään lähdekoodiin.
 
-Git haaroihin liittyvä työskentely:
+### Git haaroihin liittyvä työskentely
 
-* Git haarojen listaaminen: `git branch`
-* Uuden haaran lisääminen: `git branch haaran_nimi` tai `git checkout haaran_nimi`
-* Haaran tietojen yhdistäminen master päähaaraan: `git merge haaran_nimi`
-* Haaran poistaminen: `git branch -d uusibranch`
+#### Git haarojen listaaminen
+    git branch
+#### Uuden haaran lisääminen
+    git branch haaran_nimi
+#### tai
+    git checkout haaran_nimi
+#### Haaran tietojen yhdistäminen master päähaaraan
+    git merge haaran_nimi
+#### Haaran poistaminen
+    git branch -d uusibranch
 
 ---
 
