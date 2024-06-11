@@ -116,10 +116,10 @@ Tämä kopioi repositorion omaan GitHub-tiliisi.
 
 Mene omaan GitHub-profiiliisi ja löydä forkattu repositorio.
 
-Kopioi kloonaus-URL:
+## Kopioi kloonaus-URL
 
 Klikkaa "Code"-painiketta ja kopioi HTTPS-URL.
-Avaa terminaali ja suorita: git clone <https://github.com/kayttajanimi/forkatun-repon-nimi.git>
+Avaa terminaali ja suorita: git clone [def]
 cd forkatun-repon-nimi
 
 ## pull reguestin teko
@@ -142,3 +142,5 @@ Klikkaa "Merge pull request" ja sitten "Confirm merge".
 Poista haara:
 
 Klikkaa "Delete branch" yhdistämisen jälkeen.
+
+[def]: https://github.com/kayttajanimi/forkatun-repon-nimi.git
